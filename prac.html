@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .cont {
+            height: 600px;
+            width: 800px;
+            border: 2px solid red;
+            display: flex;
+        }
+
+        .cont .same {
+            width: 400px;
+            height: 350px;
+            background-color: rgb(155, 197, 197);
+            border: 2px solid gray;
+
+        }
+
+        .cont .same2 {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(17, 83, 83);
+
+        }
+
+        .cont .same2 div {
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cont .same2 #a2 {
+            margin-top: auto;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cont">
+
+        <div class="same">1</div>
+
+        <div class="same same2">
+            <div>a1</div>
+            <div id="a2">a2</div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

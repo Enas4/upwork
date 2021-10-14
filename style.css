@@ -1,0 +1,1011 @@
+body{
+    width:100%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+   
+    
+/* header starts here */
+
+/* upper portion starts here */
+.menuButton{
+    display: none;
+    opacity: 0.8;
+    padding:0px 20px 0px 0px;
+}
+.menuButton i{
+    color: rgb(51, 50, 50);
+}
+.containerOfHeader{
+    position:fixed;
+    top: 0;
+    left:0px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding:15px 4%;
+    z-index: 2;
+}
+ /* sliding strip starts here */
+
+ .slidingStrip{
+    width:70%;
+    background: #14a800;
+    padding: 12px;
+    position:absolute;
+    top: 0px;
+    left: 0;
+    margin:5px 10px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    margin-left: -910px;
+    transition: .7s;
+}
+    /* sliding strip ends here */
+.containerOfHeader .upperHeader{
+    display: flex;
+    align-items: center;
+}
+.containerOfHeader .upperHeader ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+.containerOfHeader .upperHeader ul li{
+    padding: 0px 12px;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+     margin-left:10px;
+     cursor: pointer;
+}
+.containerOfHeader .upperHeader .list ul li a{
+    font-size: 0.86em;
+    color: #6e6e6d;
+    font-weight: 600;
+   text-align: center;
+   letter-spacing: 0.5px;
+   margin-right: 5px;
+   text-decoration: none;
+}
+.containerOfHeader .upperHeader ul li i{
+    color: rgb(161, 161, 161);
+    transition: 0.2s linear;
+}
+.containerOfHeader .upperHeader .list li:hover i{
+      transform :rotate(180deg);
+}
+.containerOfHeader .upperHeader .list li:hover a{
+    color:#14a800;
+}
+.containerOfHeader .upperHeader .search{
+    width:280px;
+    margin-left: 35px;
+}
+.containerOfHeader .upperHeader .search input{
+    border-radius: 25px;
+    border: 1px lightgrey solid;
+    width:100%;
+    padding: 10px 10px;
+    color: rgb(51, 51, 51);
+    font-weight: 500;
+    font-size: 1em;
+    outline: none;
+    word-spacing: 5px;
+}
+.containerOfHeader .upperHeader .search-bar{
+    display: none;
+    margin-left: auto;
+}
+.containerOfHeader .upperHeader .search-bar span{
+    padding: 10px 13px ;
+    border:1px solid lightgrey;
+    border-radius: 50%;
+    background: rgb(238, 246, 248);
+}
+.containerOfHeader .upperHeader .search-bar span i{
+    color: green;
+} 
+.containerOfHeader .buttonsDiv{
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.containerOfHeader .buttonsDiv div{
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.containerOfHeader .buttonsDiv div a{
+    font-size: 0.9em;
+     font-family: 'Roboto', sans-serif;
+   font-weight: 600;
+}
+.containerOfHeader .buttonsDiv .firstBtn{
+    opacity: 0.6;
+    margin-right: 10px;
+}
+.containerOfHeader .buttonsDiv .secondBtn{
+    background: #14a800;
+    padding:13px 30px;
+    color: white;
+    border-radius: 25px;
+}
+/* upper portion ends here */
+
+hr{
+    width:100% ;
+    opacity: 0.5;
+}
+
+ /* lower portion starts here */
+ .containerOfHeader .lowerHeader{
+    border-top: 1px solid lightgray;
+     margin-top: 20px;
+ }
+.containerOfHeader .lowerHeader ul{
+     margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+.containerOfHeader .lowerHeader ul li{
+    padding: 13px;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+     cursor: pointer;
+}
+.containerOfHeader .lowerHeader ul li a{
+    font-size: 0.86em;
+    color: #6e6e6d;
+    font-weight: 600;
+   text-align: center;
+   letter-spacing: 0.5px;
+   text-decoration: none;
+}
+.containerOfHeader .lowerHeader ul li i{
+    margin-left: 5px;
+    opacity: 0.6;
+}
+.containerOfHeader .lowerHeader ul li:hover a,.containerOfHeader .lowerHeader ul li:hover i{
+    color: #14a800;
+}
+ /* lower portion ends here */
+
+/* header ends here */
+
+/* side barmenu starts here*/
+ .closebutton{
+    padding-right: 0px;
+    display: block;
+}
+.closebutton i{
+    padding: 5px 0px;
+    opacity: 0.5;
+    vertical-align: middle;
+}
+.side-barmenu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed ;
+    background: white;
+    left:0px;
+    top:0;
+    z-index: 2;
+    padding:0px 20px 20px 20px;
+   box-sizing: border-box;
+   margin-left: -1300px;
+   transition: 0.2s;
+}
+.side-barmenu .headerOfSidebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.side-barmenu .headerOfSidebar div{
+    padding: 10px;
+}
+.side-barmenu .headerOfSidebar div:nth-child(3){
+    margin-left: auto;
+}
+.side-barmenu .headerOfSidebar a{
+    text-decoration: none;
+    color: rgb(68, 67, 67);
+    font-size: 0.9em;
+    font-weight: 500;
+}
+.side-barmenu div input{
+    width: 100%;
+    padding:10px ;
+    border-radius: 25px;
+    border:1px solid lightgray;
+box-sizing: border-box;    
+}
+.side-barmenu ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    margin-top: 10px;
+}
+.side-barmenu ul li{
+    padding: 20px ;
+    padding-left: 0px;
+}
+.side-barmenu ul li a{
+    font-weight: 600;
+    font-size: 0.9em;
+    color:black;
+    text-decoration: none;
+}
+.side-barmenu .lastdiv{
+    width: 100%;
+    text-align: center;
+ margin-top: auto;
+}
+.side-barmenu .lastdiv button{
+    width:100%;
+    background: #14a800;
+    color: white;
+    padding: 10px;
+    border: 0px;
+    border-radius: 25px;
+} 
+/* side bar menu ends here*/
+
+/* mainDiv starts here */
+
+.mainDiv{
+    height:100vh;
+    position: relative;
+    top: 0;
+    left:0;
+    display: flex;
+    padding:150px 3% 0px 3%;
+    box-sizing: border-box;
+}
+/* rightDiv starts here */
+.rightDiv{
+    width: 60%;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.leftDiv{
+    width: 40%;
+}
+.mainDiv .rightDiv div h1{
+    color:#14a800;
+    font-family: 'Scheherazade New', serif;
+     font-size: 6em;
+     line-height: 80px;
+     margin: 0px;
+     padding: 0px;
+     font-weight: normal;
+}
+.mainDiv .rightDiv h2{
+    opacity: 0.6;
+    line-height: 30px;
+}
+.mainDiv .rightDiv .rightDivBtn{
+    margin-top: 5%;
+}
+.mainDiv .rightDiv a{
+    padding:10px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.mainDiv .rightDiv a:nth-child(1){
+    background: #14a800;
+    color: white;
+    font-size: 0.86em;
+}
+.mainDiv .rightDiv a:nth-child(2){
+    background: white;
+    color: #14a800;
+}
+.mainDiv .rightDiv .logos{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.mainDiv .rightDiv .logos div{
+    margin-right: 5%;
+    align-items: center;
+}
+.mainDiv .rightDiv .logos div img{
+    width: 100%;
+}
+.mainDiv .rightDiv .logos div:nth-child(2){
+    display: flex;
+}
+.mainDiv .rightDiv .logos span{
+    font-weight: bold;
+    opacity: 0.5;
+}
+/* rightDiv ends here */
+
+/* left div starts here */
+ .mainDiv .leftDiv img{
+    width: 100%;
+position:relative;
+top: 50%;
+transform: translateY(-50%);
+box-sizing: border-box;
+ }
+
+
+/* left div ends here */
+/* mainDiv ends here */
+
+/* <!-- client div starts here --> */
+.clientDiv{
+    margin:0% 2%;
+    color: white;
+     height: auto;
+     background: url(talent.webp);
+     background-position: center;
+}
+.clientDiv .insideClientDiv{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.clientDiv .insideClientDiv h1{
+    font-family: 'Scheherazade New', serif;
+    letter-spacing: 2px;
+    font-size: 6em;
+    font-weight: 500;
+    line-height: 62px;
+    word-spacing: 1px;
+}
+.clientDiv .insideClientDiv p{
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.clientDiv .insideClientDiv .nestedDiv{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.clientDiv .insideClientDiv .nestedDiv .greenDiv{
+    display: flex;
+    flex-direction: column;
+    background-color: #14a800;
+    padding-left:10px;
+    width: 32%;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.clientDiv .insideClientDiv .nestedDiv .greenDiv h3{
+    font-size: 2em;
+}
+.clientDiv sup{
+    font-size: 0.5em;
+    margin-right: 2px;
+}
+.clientDiv .insideClientDiv .nestedDiv .greenDiv:hover{
+    color: #14a800;
+    background-color: white;
+}
+
+/* <!-- client div ends here --> */
+
+/* pro div starts here */
+
+.proDiv{
+   display: flex;
+   margin:0px 2%;
+   padding: 2% 10%;
+}
+.proDiv .proRightDiv, .proDiv .proLeftDiv{
+    width: 50%;
+}
+/* pro right div starts here */
+.proDiv .proRightDiv .firstH1{
+    font-size: 5em;
+    font-family: 'Scheherazade New', serif;
+    margin: 0px;
+    line-height: 70px;
+    font-weight: 500;
+}
+.proDiv .proRightDiv .greenH1{
+    color: #14a800;
+}
+.proDiv .proRightDiv h1:not(.firstH1, .greenH1){
+    font-weight: bold;
+    opacity: 0.5;
+}
+/* pro right div ends here */
+
+/* pro left div starts here */
+.proDiv .proLeftDiv img{
+    width: 100%;
+    border-radius: 10px;
+}
+.proDiv .proLeftDiv a{
+    font-size: 0.8em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px ;
+    border:1px solid gray;
+    line-height: 40px;
+    border-radius: 25px;
+    color: rgb(100, 99, 99);
+    margin-right: 5px;
+}
+/* pro left div ends here */
+
+/* pro div ends here */
+
+/* Blue div starts here */
+
+.find-work{
+    display: flex;
+    margin:0% 2%;
+}
+.find-work .find-work-rightDiv, .find-work .find-work-leftDiv{
+    width: 50%;
+}
+.find-work .find-work-rightDiv img{
+    width: 100%;
+}
+.find-work .find-work-leftDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #0161af;;
+    color: white;
+    box-sizing: border-box;
+}
+.find-work .find-work-leftDiv h1{
+    font-size: 5em;
+    font-family: 'Scheherazade New', serif;
+    line-height: 70px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.find-work .find-work-leftDiv p{
+    font-weight: 600;
+    font-size: 1.1em;
+}
+.find-work .find-work-leftDiv .find-work-nestedDiv{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.find-work .find-work-leftDiv .find-work-nestedDiv .three-boxes{
+    display: flex;
+}
+.find-work .find-work-leftDiv .find-work-nestedDiv .three-boxes div{
+    border-top: 1px solid white;
+    padding-right: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.find-work .find-work-leftDiv .find-work-nestedDiv .anchorDiv{
+    padding:20px;
+    padding-left: 0px;
+    border-radius: 25px;
+}
+.find-work .find-work-leftDiv a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: white;
+    color: #0073d2;
+    font-size: 0.9em;
+}
+/* Blue div ends here */
+
+/* two pics div starts here */
+
+.twoPicsDiv{
+    display: flex;
+    margin:0% 2%;
+}
+.twoPicsDiv img{
+    width: 80%;
+    border-radius: 0px 0px 15px 15px;
+}
+.twoPicsDiv .twoPicsDiv-A {
+    width: 55%;
+    padding: 20px;
+    padding-right: 0px;
+    box-sizing: border-box;
+}
+.twoPicsDiv .twoPicsDiv-B{
+    width: 45%;
+    padding: 20px;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.twoPicsDiv .twoPicsDiv-A div{
+    padding-left: 18%;
+}
+.twoPicsDiv .twoPicsDiv-A h1{
+    font-size: 450%;
+    font-family: 'Scheherazade New', serif;
+    line-height: 100%;
+}
+.twoPicsDiv .twoPicsDiv-A .heading-A{
+    padding-left: 0px;
+}
+.twoPicsDiv .twoPicsDiv-A .a{
+    flex-wrap: nowrap;
+}
+.twoPicsDiv .twoPicsDiv-A div p,.twoPicsDiv .twoPicsDiv-B div p{
+    color:#14a800;
+    font-family: 'Scheherazade New', serif;
+    font-size:200%;
+    line-height: 30px;
+    word-spacing: -3px;
+    font-weight: normal;
+}
+.twoPicsDiv .twoPicsDiv-A .rightAligningDiv .centerLine  {
+    height: 1px;
+     width: 50%;
+     background-color:  black;
+     margin-left: 20%;
+     margin-bottom: 10px;
+}
+ .twoPicsDiv .twoPicsDiv-B .centerLine{
+     margin-left: 0px;
+     background-color: black;
+     height: 1px;
+     margin-bottom: 10px;
+ }
+.twoPicsDiv .twoPicsDiv-A span, .twoPicsDiv .twoPicsDiv-B span{
+    font-size: 1.17em;
+    font-weight: bold;
+}
+.twoPicsDiv .twoPicsDiv-A h3, .twoPicsDiv .twoPicsDiv-B h3{
+    margin-top: 0px;
+    opacity: 0.7;
+}
+/* two pics div ends here */
+
+/* <!-- green div starts here --> */
+ .parrotGreenDiv{
+     display: flex;
+     margin:0% 2%;
+     background-color: #14a800;
+     padding: 20px;
+
+ }
+ .parrotGreenDiv .greenDiv-A,.parrotGreenDiv .greenDiv-B {
+     width: 50%;
+ }
+ .parrotGreenDiv .greenDiv-A h1{
+     font-family: Rza;
+     font-weight: 400;
+     font-size: 72px;
+     line-height: 72px;
+     color: #001e00;
+     margin-top: 0px;
+     color:white;
+ }
+ .parrotGreenDiv .greenDiv-B img{
+     width: 100%;
+ }
+ .parrotGreenDiv .greenDiv-A{
+    display: flex;
+    flex-direction: column;
+ }
+ .parrotGreenDiv .greenDiv-A .nestedGreenDiv-A{
+     display: flex;
+     margin-top: auto;
+     font-family: 'Abril Fatface', cursive;;
+     letter-spacing: 1px;
+     width: 100%;
+     color:white;
+ }
+ .parrotGreenDiv .greenDiv-A .nestedGreenDiv-A div{
+     width: 100%;
+ }
+ .parrotGreenDiv .greenDiv-A .nestedGreenDiv-A h3{
+     font-size: 20px;
+     
+ }
+ 
+/* <!-- green div ends here --> */
+
+/* top skills list starts here */
+.topSkills{
+    margin:0% 2%;
+    display: flex;
+    padding: 0% 2%;
+}
+.topSkills div{
+    flex-grow: 1;
+}
+.topSkills h1{
+    font-size:3vw;
+    font-family: 'Abril Fatface', cursive;;
+    font-weight: lighter;
+     opacity: .3;
+}
+.topSkills h3{
+    font-size:2vw;
+    font-family: 'Abril Fatface', cursive;;
+    font-weight: lighter;
+     opacity: .6;
+}
+.topSkills h1:hover, .topSkills h3:hover{
+    color: darkgreen;
+    opacity: 1;
+}
+
+/* top skills list ends here */
+
+/* footer starts here       */
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin: 0% 2%;
+     background-color: #081e01;
+     font-size:1vw;
+     font-family: 'Abril Fatface', cursive;;
+     font-weight: 200;
+     letter-spacing: 1px;
+     color:white;
+}
+.footer div{
+    padding: 20px;
+}
+.footer .footer-1 {
+    display: flex;
+}
+.footer .footer-1 h3{
+    color: white;
+    padding-left: 20px;
+}
+.footer .footer-1 a{
+    margin:10px 0px;
+    color: white;
+}
+.footer .footer-1 div{
+    flex-grow: 1;
+}
+.footer a{
+    display: block;
+    text-decoration: none;
+}
+.footer .footer-2, .footer .footer-3{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+}
+.footer .footer-2 a{
+    padding-right: 15px;
+    text-align: center;
+    padding:10px;
+    margin-right: 10px;
+    color: white;
+    border-radius: 100%;
+}
+.footer .footer-2 h3{
+    margin-right: 10px; 
+}
+.footer .footer-2 div:nth-child(1),.footer .footer-2 div:nth-child(2){
+     display: flex;
+     justify-content: left;
+    align-items: center;
+}
+.footer .footer-2 div:nth-child(2){
+    margin-left: auto;
+}
+.footer .footer-3 div:nth-child(1){
+    border-right: 2px solid white;
+}
+.footer .footer-3 a{
+    display: inline;
+    color: white;
+    padding-right: 15px;
+}
+
+/* footer ends here     */
+
+/* media query */
+
+@media only screen and (max-width:1053px) {
+    .containerOfHeader .upperHeader .search{
+        display: none;
+    }
+    .containerOfHeader .upperHeader .buttonsDiv {
+        float: right;
+         margin-left: 0px;
+   }
+   .containerOfHeader .upperHeader .search-bar{
+       display: flex;
+       margin-left: auto;
+   }
+   .mainDiv .rightDiv div h1{
+       font-size: 5em;
+   }
+   .clientDiv{
+       margin: 0% 3%;
+   }
+   .proDiv{
+       padding: 0% 2% ;
+       margin: 0% 3%;
+   }
+   .find-work{
+       margin: 0% 3%;
+   }
+   .find-work .find-work-rightDiv {
+       width: 60%;
+   }
+   .find-work .find-work-rightDiv img{
+       height: 100%;
+   }
+   .find-work .find-work-lefttDiv {
+       width: 40%;
+   }
+   .find-work .find-work-leftDiv h1{
+       font-size: 4em;
+       line-height: 50px;
+   }
+   .twoPicsDiv{
+    margin:0% 3%;
+}
+.parrotGreenDiv{
+    margin:0% 3%
+}
+
+ }
+ 
+@media  screen and (max-width:976px) {
+    .menuButton{
+        display: block;
+    }
+    .containerOfHeader .lowerHeader, .containerOfHeader .upperHeader .search-bar, .containerOfHeader .upperHeader ul{
+        display: none;
+    }
+    .containerOfHeader .upperHeader .buttonsDiv{
+         margin-left: auto;
+    }
+    .containerOfHeader .buttonsDiv .firstBtn{
+        margin-right: 0px;
+    }
+    .containerOfHeader .upperHeader .buttonsDiv .secondBtn{
+        background: white;
+        color: black;
+        opacity: 0.6;
+    }
+    .mainDiv{
+        padding:50px 3% 0px 3%;
+        height: auto;
+    }
+    .mainDiv .rightDiv div h1{
+        font-size: 3.4em;
+        line-height: 50px;
+    }
+    .mainDiv .rightDiv h2{
+        font-size: 1.3em;
+    }
+    .clientDiv{
+        margin:0% 0%;
+    }
+    .clientDiv .insideClientDiv p{
+        margin-bottom: 50px;
+    }
+    .clientDiv .insideClientDiv .nestedDiv .greenDiv h3{
+        font-size: 1.5em;
+    }
+    .proDiv .proRightDiv .firstH1 {
+        font-size: 4em;
+    }
+    .proDiv .proRightDiv h1{
+        font-size: 1.5em;
+    }
+    .find-work{
+        margin:0% 0%;
+    }
+    .find-work .find-work-leftDiv h1{
+        font-size: 2.5em;
+        line-height: 30px;
+    }
+    .find-work .find-work-leftDiv .find-work-nestedDiv{
+        margin-top: 50px;
+    }
+    .find-work .find-work-leftDiv .find-work-nestedDiv .three-boxes div{
+        padding-right: 0px;
+       line-height: 20px;
+    }
+    .find-work .find-work-leftDiv .find-work-nestedDiv .anchorDiv {
+        padding-top: 20px 20px 0px 0px;
+    }
+    .twoPicsDiv{
+        margin:0% 5%;
+    }
+    .twoPicsDiv .twoPicsDiv-A h1{
+        font-size: 300%;
+    }
+    .twoPicsDiv .twoPicsDiv-A div p,.twoPicsDiv .twoPicsDiv-B div p{
+        font-size:150%;
+    }
+    .parrotGreenDiv{
+        margin:0% 5%;
+    }
+    .parrotGreenDiv .greenDiv-A h1{
+        font-size: 50px;
+        line-height: 40px;
+    }
+    .parrotGreenDiv .greenDiv-A .nestedGreenDiv-A div h3, h4{
+        margin:15px 0px;
+        font-size:1px;
+    }
+    
+}
+
+@media only screen and (max-width:750px){
+    .mainDiv .leftDiv{
+        display: none;
+    }
+    .mainDiv .rightDiv{
+        width: 100%;
+        margin: 0% 10%;
+    }
+    .clientDiv{
+        margin: 0% 12%;
+    }
+    .clientDiv .insideClientDiv .nestedDiv{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .clientDiv .insideClientDiv h1{
+        font-size: 3em;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    .clientDiv .insideClientDiv .nestedDiv .greenDiv{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+     .clientDiv .insideClientDiv .nestedDiv .greenDiv h3{
+         margin-top: 10px;
+     margin-bottom: 0px;
+         font-size: 1.5em;
+     }
+     .clientDiv .insideClientDiv .nestedDiv .greenDiv h4{
+         margin: 10px 0px;
+     }
+     .proDiv{
+         margin: 0% 12%;
+         flex-direction: column;
+     }
+     .proDiv .proRightDiv, .proDiv .proLeftDiv{
+         width: 100%;
+     }
+     .proDiv .proLeftDiv img{
+         display: none;
+     }
+     .proDiv .proRightDiv h1{
+         font-size: 1.2em;
+     }
+     .find-work {
+         flex-direction: column;
+         margin: 0% 4%;
+     }
+     .find-work .find-work-rightDiv, .find-work .find-work-leftDiv{
+         width: 100%;
+     }
+     .find-work .find-work-leftDiv{
+         padding-bottom: 20px;
+     }
+    .find-work .find-work-leftDiv .find-work-nestedDiv .three-boxes{
+        flex-direction: column;
+    }
+    .find-work .find-work-leftDiv .find-work-nestedDiv .three-boxes div{
+        padding: 5px 0px;
+    }
+    .twoPicsDiv{
+        margin: 0% 4%;
+        flex-direction: column;
+    }
+    .twoPicsDiv .twoPicsDiv-A ,.twoPicsDiv .twoPicsDiv-B{
+        width: 100%;
+    }
+    .twoPicsDiv .twoPicsDiv-A div, .twoPicsDiv .twoPicsDiv-B div{
+        padding-right: 0px;
+        padding-left: 0px;
+        font-size: 0.9em;
+    }
+    .twoPicsDiv .twoPicsDiv-A .rightAligningDiv .centerLine {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .twoPicsDiv .twoPicsDiv-A div p{
+        margin:0px;
+        line-height: 20px;
+    }
+    .twoPicsDiv .twoPicsDiv-B .aligningDiv-B p{
+        font-size: 130%;
+        margin:0px;
+        line-height: 20px;
+    }
+    .twoPicsDiv .twoPicsDiv-A h3, .twoPicsDiv .twoPicsDiv-B h3 {
+        margin:0px
+    }
+    .twoPicsDiv .twoPicsDiv-A .rightAligningDiv, .twoPicsDiv .twoPicsDiv-B{
+        display: flex;
+    }
+    .twoPicsDiv .twoPicsDiv-B .aligningDiv-B{
+        flex-direction: column;
+    }
+    .twoPicsDiv .twoPicsDiv-B div:nth-child(2){
+        width: 100%;
+    }
+    .twoPicsDiv .twoPicsDiv-B{
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .twoPicsDiv .twoPicsDiv-B img{
+        width: 70%;
+    }
+    .parrotGreenDiv {
+        flex-direction: column;
+        margin:0% 4%;
+    }
+    .parrotGreenDiv .greenDiv-A,.parrotGreenDiv .greenDiv-B{
+        width: 100%;
+    }
+    .parrotGreenDiv .greenDiv-A .nestedGreenDiv-A{
+        column-gap: 20px;
+    }
+    .topSkills{
+        margin:0% 4%;
+    }
+    .footer .footer-1,.footer .footer-2,.footer .footer-3{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer .footer-2 div:nth-child(2){
+        margin-left: 0px;
+    }
+    .footer .footer-2, .footer .footer-3{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+@media screen and (max-width:600px){
+   .containerOfHeader, .mainDiv .proDiv{
+       padding-left: 1%;
+       padding-right: 1%;
+   }
+   .menuButton{
+       padding-left: 15px;
+   }
+   .mainDiv .rightDiv{
+    margin: 0% 1%;
+   }
+   .clientDiv{
+       margin:0% 4%;
+   }
+   .proDiv {
+    margin: 0% 4%;
+       padding-top: 10px;
+   }
+   .proDiv .proRightDiv .firstH1{
+       font-size: 2.5em;
+   }
+}
