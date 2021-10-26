@@ -9,12 +9,12 @@
     <title>Upwork|The world's market place</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <style>
+    <!-- <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
     </style>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-    </style>
+    </style> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
@@ -44,9 +44,9 @@
 
             <div class="list">
                 <ul>
-                    <li><a href="">Find Talent</a><i class="fas fa-caret-down fa-1x"></i></li>
-                    <li><a href="">Find Work</a><i class="fas fa-caret-down fa-1x"></i></li>
-                    <li><a href="">Why Upwork</a><i class="fas fa-caret-down fa-1x"></i></li>
+                    <li><a href="">Find Talent <i class="fas fa-caret-down fa-1x"></i></a></li>
+                    <li><a href="">Find Work <i class="fas fa-caret-down fa-1x"></i></a></li>
+                    <li><a href="">Why Upwork <i class="fas fa-caret-down fa-1x"></i></a></li>
                     <li><a href="">Enterprise</a></li>
                 </ul>
             </div>
@@ -66,8 +66,6 @@
 
         </div>
         <!-- upper portion ends here -->
-
-        <!-- <hr> -->
 
         <!-- lower portion starts here -->
         <div class="lowerHeader">
@@ -127,7 +125,7 @@
 
         <!-- right portion starts here -->
 
-        <div class="rightDiv">
+        <div class="leftDiv">
 
             <div>
                 <h1>Join the world's work marketplace</h1>
@@ -137,7 +135,7 @@
                 <h2>Find great talent. Build your business.<br />Take your career to the next level.</h2>
             </div>
 
-            <div class="rightDivBtn">
+            <div class="leftDivBtn">
                 <a href="">Find Talent</a>
                 <a href="">Find Work</a>
             </div>
@@ -156,7 +154,7 @@
         <!-- right portion ends here -->
 
         <!-- left portion starts here -->
-        <div class="leftDiv">
+        <div class="rightDiv">
             <img src="world.webp" alt="">
         </div>
         <!-- left portion ends here -->
@@ -357,16 +355,16 @@
             </div>
 
             <div class="nestedGreenDiv-A">
-                <div>
+                <div class="nestedGreenDiv-ASame">
                     <div>
                         <h4>A winner of G2 Crowd’s</h4>
                     </div>
                     <div>
-                        <h3>2021 Best Software Awards</h3>
+                        <h2>2021 Best Software Awards</h2>
                     </div>
                     <div><img src="group.svg" alt=""></div>
                 </div>
-                <div>
+                <div class="nestedGreenDiv-ASame">
                     <div>
                         <h4>107,951 reviews</h4>
                     </div>
@@ -442,63 +440,64 @@
 
         <div class="footer-1">
             <div>
-                 <h3>For Clients</h3>
-                <div class="same">
-                    <a href="">How to Hire</a>
-                    <a href="">Talent Marketplace</a>
-                    <a href="">Prpoject Catalog</a>
-                    <a href="">Talent Scout</a>
-                    <a href="">Enterprise</a>
-                    <a href="">Payroll Services</a>
-                    <a href="">Direct Contracts</a>
-                    <a href="">Hire Worldwide</a>
-                    <a href="">Hire in the USA</a>
-                </div>
+                 <h5 class="accordion">For Clients <i class="fas fa-chevron-down"></i></h5>
+                 <ul class="panel">
+                     <li> <a href="">How to Hire</a></li>
+                     <li><a href="">Talent Marketplace</a></li>
+                     <li><a href="">Project Catalog</a></li>
+                     <li><a href="">Talent Scout</a></li>
+                     <li><a href="">Enterprise</a></li>
+                     <li><a href="">Payroll Services</a></li>
+                     <li><a href="">Direct Contracts</a></li>
+                     <li><a href="">Hire Worldwide</a></li>
+                     <li><a href="">Hire in the USA</a></li>
+                 </ul>
             </div>
 
             <div>
-                 <h3>For Talent</h3>
-                <div class="same">
-                    <a href="">How to Find Work</a>
-                    <a href="">Direct Contracts</a>
-                    <a href="">Find Freelance Jobs Worldwide</a>
-                    <a href="">Find Freelance Jobs in the USA</a>
-                </div>
+                 <h5 class="accordion">For Talent <i class="fas fa-chevron-down"></i></h5>
+                 <ul>
+                     <li><a href="">How to Find Work</a></li>
+                     <li><a href="">Direct Contracts</a></li>
+                     <li><a href="">Find Freelance Jobs Worldwide</a></li>
+                     <li><a href="">Find Freelance Jobs in the USA</a></li>
+                 </ul>
             </div>
 
             <div>
-                <h3>Resources</h3>
-                <div class="same">
-                    <a href="">Help & Support</a>
-                    <a href="">Success Stories</a>
-                    <a href="">Upwork Reviews</a>
-                    <a href="">Resources</a>
-                    <a href="">Blog</a>
-                    <a href="">Community</a>
-                    <a href="">Affiliate Program</a>
-                </div>
+                <h5 class="accordion">Resources <i class="fas fa-chevron-down"></i></h5>
+                <ul id="openUl">
+                    <li><a href="">Help & Support</a></li>
+                    <li><a href="">Success Stories</a></li>
+                    <li><a href="">Upwork Reviews</a></li>
+                    <li><a href="">Resources</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Community</a></li>
+                    <li><a href="">Affiliate Program</a></li>
+                </ul>
             </div>
 
             <div>
-                <h3>Company</h3>
-                <div class="same">
-                    <a href="">About Us</a>
-                    <a href="">Leadership</a>
-                    <a href="">Investor Relations</a>
-                    <a href="">Careers</a>
-                    <a href="">Upwork Foundation</a>
-                    <a href="">Press</a>
-                    <a href="">Contact Us</a>
-                    <a href="">Trust, Safety & Security</a>
-                    <a href="">UK Modern Slavery Statement</a>
-                </div>
+                <h5 class="accordion">Company <i class="fas fa-chevron-down"></i></h5>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Leadership</a></li>
+                        <li><a href="">Investor Relations</a></li>
+                        <li> <a href="">Careers</a></li>
+                        <li><a href="">Upwork Foundation</a></li>
+                        <li><a href="">Press</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li> <a href="">Trust, Safety & Security</a></li>
+                        <li> <a href="">UK Modern Slavery Statement</a></li>
+                    </ul>
+
             </div>
 
         </div>
 
         <div class="footer-2">
             <div>
-                <h3>Follow us</h3>
+                <h5>Follow us</h5>
                 <a href=""><i class="fab fa-facebook-f"></i></a>
                 <a href=""><i class="fab fa-linkedin-in"></i></a>
                 <a href=""><i class="fab fa-twitter"></i></a>
@@ -507,7 +506,7 @@
             </div>
 
             <div>
-                <h3>Mobile app</h3>
+                <h5>Mobile app</h5>
                 <a href=""><i class="fab fa-apple"></i></a>
                 <a href=""><i class="fab fa-android"></i></a>
             </div>
@@ -516,11 +515,11 @@
 
         <div class="footer-3">
             <div>
-                <h3>© 2015 - 2021 Upwork® Global Inc.</h3>
+                <h5>© 2015 - 2021 Upwork® Global Inc.</h5>
             </div>
-            <div><a href="">Terms of services</a>
-                <a href="">Privacy Policy</a>
-                <a href="">Accessibility</a>
+            <div><h5>Terms of services</h5>
+                <h5>Privacy Policy</h5>
+                <h5>Accessibility</h5>
             </div>
         </div>
 
@@ -536,9 +535,32 @@
         function closedrop() {
             document.getElementById("hide").style.marginLeft = "-1300px";
             document.getElementById("slideStrip").style.marginLeft = "-910px";
-
         }
-        
+        var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+$("fas").click(function(){       
+   //$(this) refer to the h3 clicked, so we find the .rotate (icon) and toggle the class "down"    
+   $(this).find('.rotate').toggleClass("down");       
+   //we remove the class down from all the .rotate icons
+   $('.rotate').removeClass("down"); 
+})
+
+
+
+
+
     </script>
 </body>
 

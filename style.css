@@ -1,21 +1,20 @@
 body{
     width:100%;
-    margin: 0;
+    margin:0px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-   
-    
 /* header starts here */
 
 /* upper portion starts here */
+
 .menuButton{
     display: none;
     opacity: 0.8;
-    padding:0px 20px 0px 0px;
+    padding:0px 20px 0px 0px; 
 }
-.menuButton i{
+ .menuButton i{
     color: rgb(51, 50, 50);
 }
 .containerOfHeader{
@@ -27,7 +26,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding:15px 4%;
+    padding:10px 4%;
     z-index: 2;
 }
  /* sliding strip starts here */
@@ -51,33 +50,30 @@ body{
 .containerOfHeader .upperHeader{
     display: flex;
     align-items: center;
+    padding-left:15px;
 }
 .containerOfHeader .upperHeader ul{
-    margin: 0px;
-    padding: 0px;
     display: flex;
-    justify-content: space-between;
-    margin-left: 25px;
+    padding:0px;
+    margin-left: 20px;
 }
 .containerOfHeader .upperHeader ul li{
-    padding: 0px 12px;
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
-     margin-left:10px;
+     margin-left:22px;
      cursor: pointer;
 }
 .containerOfHeader .upperHeader .list ul li a{
-    font-size: 0.86em;
+    font-size: 0.95em;
     color: #6e6e6d;
-    font-weight: 600;
-   text-align: center;
+    font-weight: bold;
    letter-spacing: 0.5px;
-   margin-right: 5px;
    text-decoration: none;
 }
 .containerOfHeader .upperHeader ul li i{
     color: rgb(161, 161, 161);
     transition: 0.2s linear;
+   margin-left: 2px;
 }
 .containerOfHeader .upperHeader .list li:hover i{
       transform :rotate(180deg);
@@ -86,8 +82,8 @@ body{
     color:#14a800;
 }
 .containerOfHeader .upperHeader .search{
-    width:280px;
-    margin-left: 35px;
+    width:300px;
+    margin-left: 50px;
 }
 .containerOfHeader .upperHeader .search input{
     border-radius: 25px;
@@ -98,6 +94,7 @@ body{
     font-weight: 500;
     font-size: 1em;
     outline: none;
+    box-sizing: border-box;
     word-spacing: 5px;
 }
 .containerOfHeader .upperHeader .search-bar{
@@ -115,15 +112,12 @@ body{
 } 
 .containerOfHeader .buttonsDiv{
     display: flex;
-    margin-left: 30px;
+    margin-left: 15px;
     align-items: center;
     justify-content: center;
 }
 .containerOfHeader .buttonsDiv div{
     display: flex;
-    margin-left: 10px;
-    align-items: center;
-    justify-content: center;
 }
 .containerOfHeader .buttonsDiv div a{
     font-size: 0.9em;
@@ -132,25 +126,22 @@ body{
 }
 .containerOfHeader .buttonsDiv .firstBtn{
     opacity: 0.6;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 .containerOfHeader .buttonsDiv .secondBtn{
     background: #14a800;
     padding:13px 30px;
     color: white;
     border-radius: 25px;
+    margin-left: 15px;
 }
 /* upper portion ends here */
-
-hr{
-    width:100% ;
-    opacity: 0.5;
-}
 
  /* lower portion starts here */
  .containerOfHeader .lowerHeader{
     border-top: 1px solid lightgray;
-     margin-top: 20px;
+     margin-top: 10px;
+     padding:10px 0px;
  }
 .containerOfHeader .lowerHeader ul{
      margin: 0px;
@@ -184,13 +175,12 @@ hr{
 
 /* side barmenu starts here*/
  .closebutton{
-    padding-right: 0px;
+    padding:0px 20px 0px 0px; 
     display: block;
 }
 .closebutton i{
-    padding: 5px 0px;
-    opacity: 0.5;
-    vertical-align: middle;
+    color: rgb(51, 50, 50);
+    opacity: 0.8;
 }
 .side-barmenu{
     width: 100%;
@@ -213,7 +203,7 @@ hr{
     align-items: center;
 }
 .side-barmenu .headerOfSidebar div{
-    padding: 10px;
+    padding: 15px;
 }
 .side-barmenu .headerOfSidebar div:nth-child(3){
     margin-left: auto;
@@ -234,10 +224,11 @@ box-sizing: border-box;
 .side-barmenu ul{
     margin: 0px;
     padding: 0px;
-    list-style-type: none;
+   
     margin-top: 10px;
 }
 .side-barmenu ul li{
+    list-style-type: none;
     padding: 20px ;
     padding-left: 0px;
 }
@@ -250,7 +241,7 @@ box-sizing: border-box;
 .side-barmenu .lastdiv{
     width: 100%;
     text-align: center;
- margin-top: auto;
+     margin-top: auto;
 }
 .side-barmenu .lastdiv button{
     width:100%;
@@ -270,81 +261,80 @@ box-sizing: border-box;
     top: 0;
     left:0;
     display: flex;
-    padding:150px 3% 0px 3%;
+    padding:150px 2% 0px 2%;
     box-sizing: border-box;
 }
 /* rightDiv starts here */
-.rightDiv{
+.leftDiv{
     width: 60%;
     padding-top: 15px;
     display: flex;
     flex-direction: column;
 }
-.leftDiv{
+.rightDiv{
     width: 40%;
 }
-.mainDiv .rightDiv div h1{
+.mainDiv .leftDiv div h1{
     color:#14a800;
     font-family: 'Scheherazade New', serif;
-     font-size: 6em;
+     font-size: 8vw;
      line-height: 80px;
      margin: 0px;
      padding: 0px;
-     font-weight: normal;
+     font-weight: 500;
 }
-.mainDiv .rightDiv h2{
+.mainDiv .leftDiv h2{
     opacity: 0.6;
     line-height: 30px;
 }
-.mainDiv .rightDiv .rightDivBtn{
-    margin-top: 5%;
+.mainDiv .leftDiv .leftDivBtn{
+    margin-top: 20px;
 }
-.mainDiv .rightDiv a{
+.mainDiv .leftDiv a{
     padding:10px 30px;
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
     margin-right: 10px;
 }
-.mainDiv .rightDiv a:nth-child(1){
+.mainDiv .leftDiv a:nth-child(1){
     background: #14a800;
     color: white;
     font-size: 0.86em;
 }
-.mainDiv .rightDiv a:nth-child(2){
+.mainDiv .leftDiv a:nth-child(2){
     background: white;
     color: #14a800;
 }
-.mainDiv .rightDiv .logos{
+.mainDiv .leftDiv .logos{
     margin-top: 70px;
     display: flex;
     flex-direction: column;
 }
-.mainDiv .rightDiv .logos div{
-    margin-right: 5%;
+.mainDiv .leftDiv .logos div{
+    margin-right: 20px;
     align-items: center;
 }
-.mainDiv .rightDiv .logos div img{
+.mainDiv .leftDiv .logos div img{
     width: 100%;
 }
-.mainDiv .rightDiv .logos div:nth-child(2){
+.mainDiv .leftDiv .logos div:nth-child(2){
     display: flex;
 }
-.mainDiv .rightDiv .logos span{
+.mainDiv .leftDiv .logos span{
     font-weight: bold;
     opacity: 0.5;
 }
 /* rightDiv ends here */
 
 /* left div starts here */
- .mainDiv .leftDiv img{
+ .mainDiv .rightDiv img{
     width: 100%;
 position:relative;
 top: 50%;
 transform: translateY(-50%);
 box-sizing: border-box;
  }
-
 
 /* left div ends here */
 /* mainDiv ends here */
@@ -365,9 +355,9 @@ box-sizing: border-box;
 .clientDiv .insideClientDiv h1{
     font-family: 'Scheherazade New', serif;
     letter-spacing: 2px;
-    font-size: 6em;
+    font-size: 7vw;
     font-weight: 500;
-    line-height: 62px;
+    line-height: 60px;
     word-spacing: 1px;
 }
 .clientDiv .insideClientDiv p{
@@ -390,7 +380,11 @@ box-sizing: border-box;
     box-sizing: border-box;
 }
 .clientDiv .insideClientDiv .nestedDiv .greenDiv h3{
-    font-size: 2em;
+    margin-top: 10px;
+    font-size: 3.5vw;
+}
+.clientDiv .insideClientDiv .nestedDiv .greenDiv div:nth-child(2){
+    margin-top: auto;
 }
 .clientDiv sup{
     font-size: 0.5em;
@@ -408,14 +402,14 @@ box-sizing: border-box;
 .proDiv{
    display: flex;
    margin:0px 2%;
-   padding: 2% 10%;
+   padding: 2% 9%;
 }
 .proDiv .proRightDiv, .proDiv .proLeftDiv{
     width: 50%;
 }
 /* pro right div starts here */
 .proDiv .proRightDiv .firstH1{
-    font-size: 5em;
+    font-size: 7vw;
     font-family: 'Scheherazade New', serif;
     margin: 0px;
     line-height: 70px;
@@ -423,20 +417,24 @@ box-sizing: border-box;
 }
 .proDiv .proRightDiv .greenH1{
     color: #14a800;
+    font-size: 3vw;
 }
 .proDiv .proRightDiv h1:not(.firstH1, .greenH1){
     font-weight: bold;
     opacity: 0.5;
+    font-size: 3vw;
 }
+
 /* pro right div ends here */
 
 /* pro left div starts here */
+
 .proDiv .proLeftDiv img{
     width: 100%;
     border-radius: 10px;
 }
 .proDiv .proLeftDiv a{
-    font-size: 0.8em;
+    font-size: 1vw;
     font-weight: bold;
     text-decoration: none;
     padding: 5px 10px ;
@@ -471,7 +469,7 @@ box-sizing: border-box;
     box-sizing: border-box;
 }
 .find-work .find-work-leftDiv h1{
-    font-size: 5em;
+    font-size: 7vw;
     font-family: 'Scheherazade New', serif;
     line-height: 70px;
     font-weight: 500;
@@ -479,7 +477,7 @@ box-sizing: border-box;
 }
 .find-work .find-work-leftDiv p{
     font-weight: 600;
-    font-size: 1.1em;
+    font-size: 1.5vw;
 }
 .find-work .find-work-leftDiv .find-work-nestedDiv{
     display: flex;
@@ -491,12 +489,11 @@ box-sizing: border-box;
 }
 .find-work .find-work-leftDiv .find-work-nestedDiv .three-boxes div{
     border-top: 1px solid white;
-    padding-right: 50px;
-    font-size: 1em;
+    padding-right: 25px;
+    font-size: 1.7vw;
     font-weight: bold;
     line-height: 25px;
 }
-
 .find-work .find-work-leftDiv .find-work-nestedDiv .anchorDiv{
     padding:20px;
     padding-left: 0px;
@@ -509,7 +506,7 @@ box-sizing: border-box;
     border-radius: 25px;
     background-color: white;
     color: #0073d2;
-    font-size: 0.9em;
+    font-size: 1.5vw;
 }
 /* Blue div ends here */
 
@@ -539,7 +536,7 @@ box-sizing: border-box;
     padding-left: 18%;
 }
 .twoPicsDiv .twoPicsDiv-A h1{
-    font-size: 450%;
+    font-size: 7vw;
     font-family: 'Scheherazade New', serif;
     line-height: 100%;
 }
@@ -552,7 +549,7 @@ box-sizing: border-box;
 .twoPicsDiv .twoPicsDiv-A div p,.twoPicsDiv .twoPicsDiv-B div p{
     color:#14a800;
     font-family: 'Scheherazade New', serif;
-    font-size:200%;
+    font-size:3vw;
     line-height: 30px;
     word-spacing: -3px;
     font-weight: normal;
@@ -571,7 +568,7 @@ box-sizing: border-box;
      margin-bottom: 10px;
  }
 .twoPicsDiv .twoPicsDiv-A span, .twoPicsDiv .twoPicsDiv-B span{
-    font-size: 1.17em;
+    font-size: 1.7vw;
     font-weight: bold;
 }
 .twoPicsDiv .twoPicsDiv-A h3, .twoPicsDiv .twoPicsDiv-B h3{
@@ -586,7 +583,6 @@ box-sizing: border-box;
      margin:0% 2%;
      background-color: #14a800;
      padding: 20px;
-
  }
  .parrotGreenDiv .greenDiv-A,.parrotGreenDiv .greenDiv-B {
      width: 50%;
@@ -594,7 +590,7 @@ box-sizing: border-box;
  .parrotGreenDiv .greenDiv-A h1{
      font-family: Rza;
      font-weight: 400;
-     font-size: 72px;
+     font-size: 7vw;
      line-height: 72px;
      color: #001e00;
      margin-top: 0px;
@@ -615,14 +611,18 @@ box-sizing: border-box;
      width: 100%;
      color:white;
  }
+ .parrotGreenDiv .greenDiv-A .nestedGreenDiv-A .nestedGreenDiv-ASame{
+     border-top: 1px solid white;
+     margin:10px;
+     display: flex;
+     flex-direction: column;
+ }
  .parrotGreenDiv .greenDiv-A .nestedGreenDiv-A div{
      width: 100%;
  }
- .parrotGreenDiv .greenDiv-A .nestedGreenDiv-A h3{
-     font-size: 20px;
-     
+ .parrotGreenDiv .greenDiv-A .nestedGreenDiv-A div:nth-child(3){
+     margin-top: auto;
  }
- 
 /* <!-- green div ends here --> */
 
 /* top skills list starts here */
@@ -657,70 +657,85 @@ box-sizing: border-box;
 .footer{
     display: flex;
     flex-direction: column;
-    margin: 0% 2%;
      background-color: #081e01;
-     font-size:1vw;
-     font-family: 'Abril Fatface', cursive;;
+     font-family:Arial, Helvetica, sans-serif;
      font-weight: 200;
      letter-spacing: 1px;
      color:white;
-}
-.footer div{
-    padding: 20px;
+     padding: 20px 40px;
+     font-size: 0.8em;
 }
 .footer .footer-1 {
     display: flex;
 }
-.footer .footer-1 h3{
-    color: white;
-    padding-left: 20px;
+.footer .footer-1 div{
+    width:25%;
+    flex-grow: 1;
+    margin-bottom: 1px solid white;
+}
+.footer .footer-1 ul{
+    margin:0px;
+    list-style-type: none;
+    padding: 0px;
+}
+.footer .footer-1 h5 i{
+    display: none;
+    float: right;
+    
 }
 .footer .footer-1 a{
     margin:10px 0px;
-    color: white;
-}
-.footer .footer-1 div{
-    flex-grow: 1;
+    font-size: 0.8em;
 }
 .footer a{
     display: block;
     text-decoration: none;
+    color: white;
 }
 .footer .footer-2, .footer .footer-3{
     display: flex;
     justify-content: left;
     align-items: center;
-    color: white;
+}
+.footer .footer-2{
+    margin-top: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 .footer .footer-2 a{
     padding-right: 15px;
     text-align: center;
     padding:10px;
     margin-right: 10px;
-    color: white;
     border-radius: 100%;
 }
-.footer .footer-2 h3{
-    margin-right: 10px; 
+.footer .footer-3{
+    margin-top: 20px;
 }
 .footer .footer-2 div:nth-child(1),.footer .footer-2 div:nth-child(2){
      display: flex;
      justify-content: left;
     align-items: center;
 }
+.footer .footer-3 div:nth-child(2){
+    width: 70%;
+    display: flex;
+}
+.footer .footer-3 div:nth-child(2) h5{
+    padding:0px 1%
+}
 .footer .footer-2 div:nth-child(2){
     margin-left: auto;
 }
 .footer .footer-3 div:nth-child(1){
+    padding-right: 10px;
     border-right: 2px solid white;
-}
-.footer .footer-3 a{
-    display: inline;
-    color: white;
-    padding-right: 15px;
 }
 
 /* footer ends here     */
+
+
+
 
 /* media query */
 
@@ -735,19 +750,10 @@ box-sizing: border-box;
    .containerOfHeader .upperHeader .search-bar{
        display: flex;
        margin-left: auto;
+       margin-right: 10px;
    }
-   .mainDiv .rightDiv div h1{
-       font-size: 5em;
-   }
-   .clientDiv{
-       margin: 0% 3%;
-   }
-   .proDiv{
-       padding: 0% 2% ;
-       margin: 0% 3%;
-   }
-   .find-work{
-       margin: 0% 3%;
+   .proDiv, .find-work, .twoPicsDiv, .parrotGreenDiv{
+       margin: 0% 2%;
    }
    .find-work .find-work-rightDiv {
        width: 60%;
@@ -758,18 +764,7 @@ box-sizing: border-box;
    .find-work .find-work-lefttDiv {
        width: 40%;
    }
-   .find-work .find-work-leftDiv h1{
-       font-size: 4em;
-       line-height: 50px;
-   }
-   .twoPicsDiv{
-    margin:0% 3%;
-}
-.parrotGreenDiv{
-    margin:0% 3%
-}
-
- }
+}  
  
 @media  screen and (max-width:976px) {
     .menuButton{
@@ -789,79 +784,29 @@ box-sizing: border-box;
         color: black;
         opacity: 0.6;
     }
+    .containerOfHeader .upperHeader{
+        padding-left: 0px;
+    }
     .mainDiv{
-        padding:50px 3% 0px 3%;
+        padding:80px 2% 0px 2%;
         height: auto;
     }
-    .mainDiv .rightDiv div h1{
-        font-size: 3.4em;
-        line-height: 50px;
+    .clientDiv, .find-work, .twoPicsDiv, .parrotGreenDiv{
+        margin:0% 2%;
     }
-    .mainDiv .rightDiv h2{
-        font-size: 1.3em;
+    .footer{
+        padding:0% 2%;
     }
-    .clientDiv{
-        margin:0% 0%;
-    }
-    .clientDiv .insideClientDiv p{
-        margin-bottom: 50px;
-    }
-    .clientDiv .insideClientDiv .nestedDiv .greenDiv h3{
-        font-size: 1.5em;
-    }
-    .proDiv .proRightDiv .firstH1 {
-        font-size: 4em;
-    }
-    .proDiv .proRightDiv h1{
-        font-size: 1.5em;
-    }
-    .find-work{
-        margin:0% 0%;
-    }
-    .find-work .find-work-leftDiv h1{
-        font-size: 2.5em;
-        line-height: 30px;
-    }
-    .find-work .find-work-leftDiv .find-work-nestedDiv{
-        margin-top: 50px;
-    }
-    .find-work .find-work-leftDiv .find-work-nestedDiv .three-boxes div{
-        padding-right: 0px;
-       line-height: 20px;
-    }
-    .find-work .find-work-leftDiv .find-work-nestedDiv .anchorDiv {
-        padding-top: 20px 20px 0px 0px;
-    }
-    .twoPicsDiv{
-        margin:0% 5%;
-    }
-    .twoPicsDiv .twoPicsDiv-A h1{
-        font-size: 300%;
-    }
-    .twoPicsDiv .twoPicsDiv-A div p,.twoPicsDiv .twoPicsDiv-B div p{
-        font-size:150%;
-    }
-    .parrotGreenDiv{
-        margin:0% 5%;
-    }
-    .parrotGreenDiv .greenDiv-A h1{
-        font-size: 50px;
-        line-height: 40px;
-    }
-    .parrotGreenDiv .greenDiv-A .nestedGreenDiv-A div h3, h4{
-        margin:15px 0px;
-        font-size:1px;
-    }
-    
 }
 
 @media only screen and (max-width:750px){
-    .mainDiv .leftDiv{
+   
+    .mainDiv .rightDiv{
         display: none;
     }
-    .mainDiv .rightDiv{
+    .mainDiv .leftDiv{
         width: 100%;
-        margin: 0% 10%;
+        margin: 0% 11%;
     }
     .clientDiv{
         margin: 0% 12%;
@@ -872,21 +817,25 @@ box-sizing: border-box;
         width: 100%;
     }
     .clientDiv .insideClientDiv h1{
-        font-size: 3em;
-        font-weight: 500;
         line-height: 30px;
     }
     .clientDiv .insideClientDiv .nestedDiv .greenDiv{
+        display: flex;
+        flex-direction: row;
         width: 100%;
         margin-bottom: 10px;
     }
+    .clientDiv .insideClientDiv .nestedDiv .greenDiv div{
+        width: 50%;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .clientDiv .insideClientDiv .nestedDiv .greenDiv div:nth-child(2){
+          text-align: right;
+          padding-right: 10px;
+    }
      .clientDiv .insideClientDiv .nestedDiv .greenDiv h3{
-         margin-top: 10px;
-     margin-bottom: 0px;
-         font-size: 1.5em;
-     }
-     .clientDiv .insideClientDiv .nestedDiv .greenDiv h4{
-         margin: 10px 0px;
+       margin-bottom: 15px;
      }
      .proDiv{
          margin: 0% 12%;
@@ -898,27 +847,18 @@ box-sizing: border-box;
      .proDiv .proLeftDiv img{
          display: none;
      }
-     .proDiv .proRightDiv h1{
-         font-size: 1.2em;
-     }
      .find-work {
          flex-direction: column;
-         margin: 0% 4%;
+         margin: 0% 12%;
      }
      .find-work .find-work-rightDiv, .find-work .find-work-leftDiv{
          width: 100%;
      }
-     .find-work .find-work-leftDiv{
-         padding-bottom: 20px;
-     }
     .find-work .find-work-leftDiv .find-work-nestedDiv .three-boxes{
         flex-direction: column;
-    }
-    .find-work .find-work-leftDiv .find-work-nestedDiv .three-boxes div{
-        padding: 5px 0px;
-    }
+     }
     .twoPicsDiv{
-        margin: 0% 4%;
+        margin: 0% 12%;
         flex-direction: column;
     }
     .twoPicsDiv .twoPicsDiv-A ,.twoPicsDiv .twoPicsDiv-B{
@@ -927,23 +867,16 @@ box-sizing: border-box;
     .twoPicsDiv .twoPicsDiv-A div, .twoPicsDiv .twoPicsDiv-B div{
         padding-right: 0px;
         padding-left: 0px;
-        font-size: 0.9em;
     }
     .twoPicsDiv .twoPicsDiv-A .rightAligningDiv .centerLine {
         width: 100%;
         margin-left: 0%;
     }
     .twoPicsDiv .twoPicsDiv-A div p{
-        margin:0px;
         line-height: 20px;
     }
     .twoPicsDiv .twoPicsDiv-B .aligningDiv-B p{
-        font-size: 130%;
-        margin:0px;
         line-height: 20px;
-    }
-    .twoPicsDiv .twoPicsDiv-A h3, .twoPicsDiv .twoPicsDiv-B h3 {
-        margin:0px
     }
     .twoPicsDiv .twoPicsDiv-A .rightAligningDiv, .twoPicsDiv .twoPicsDiv-B{
         display: flex;
@@ -964,27 +897,41 @@ box-sizing: border-box;
     }
     .parrotGreenDiv {
         flex-direction: column;
-        margin:0% 4%;
+        margin:0% 12%;
     }
     .parrotGreenDiv .greenDiv-A,.parrotGreenDiv .greenDiv-B{
         width: 100%;
     }
-    .parrotGreenDiv .greenDiv-A .nestedGreenDiv-A{
-        column-gap: 20px;
-    }
     .topSkills{
-        margin:0% 4%;
+        margin:0% 12%;
     }
-    .footer .footer-1,.footer .footer-2,.footer .footer-3{
+
+    .footer{
+        padding: 0% 12%;
+    }
+    .footer .footer-1 h5 i{
+        display: block;
+    }
+    .footer .footer-1{
         flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .footer .footer-1 div{
+        border-bottom: 1px solid white;
+        width: 100%;
+    }
+    .footer .footer-1 ul{
+        display: none;
+    }
+    .footer .footer-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         align-items: flex-start;
     }
-    .footer .footer-2 div:nth-child(2){
-        margin-left: 0px;
-    }
-    .footer .footer-2, .footer .footer-3{
-        padding-top: 0px;
-        padding-bottom: 0px;
+    .footer .footer-3 div:nth-child(2){
+        width: 100%;
     }
 }
 @media screen and (max-width:600px){
@@ -995,17 +942,32 @@ box-sizing: border-box;
    .menuButton{
        padding-left: 15px;
    }
-   .mainDiv .rightDiv{
+   .mainDiv .leftDiv, .twoPicsDiv{
     margin: 0% 1%;
    }
-   .clientDiv{
-       margin:0% 4%;
+   .clientDiv, .proDiv, .find-work, .parrotGreenDiv, .topSkills{
+       margin:0% 0%;
    }
-   .proDiv {
-    margin: 0% 4%;
-       padding-top: 10px;
+
+   .find-work .find-work-leftDiv .find-work-nestedDiv{
+       margin-top: 10px;
    }
-   .proDiv .proRightDiv .firstH1{
-       font-size: 2.5em;
+   .find-work .find-work-leftDiv h1 {
+       line-height: 30px;
    }
+   .twoPicsDiv .twoPicsDiv-A h3{
+       margin:0px;
+   }
+   .twoPicsDiv .twoPicsDiv-A div p, .twoPicsDiv .twoPicsDiv-B .aligningDiv-B p{
+    line-height: 15px;
+}
+.twoPicsDiv .twoPicsDiv-B .centerLine, .twoPicsDiv .twoPicsDiv-A .rightAligningDiv .centerLine {
+    margin-bottom: 0px;
+}
+.parrotGreenDiv .greenDiv-A h1 {
+    line-height: 40px;
+}
+.footer{
+    padding: 0% 2%;
+}
 }
