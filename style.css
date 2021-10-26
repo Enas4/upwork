@@ -948,7 +948,9 @@ box-sizing: border-box;
    .clientDiv, .proDiv, .find-work, .parrotGreenDiv, .topSkills{
        margin:0% 0%;
    }
-
+   .mainDiv .leftDiv div h1{
+       line-height: 40px;
+   }
    .find-work .find-work-leftDiv .find-work-nestedDiv{
        margin-top: 10px;
    }
